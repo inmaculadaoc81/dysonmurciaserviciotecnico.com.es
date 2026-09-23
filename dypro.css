@@ -112,3 +112,58 @@ footer{background:#061421!important}
   .fast-section{padding:58px 0}
   .fast-heading .section-title{font-size:clamp(30px,9vw,40px)}
 }
+
+
+/* === Ajustes solicitados 2026-09-23: paleta controlada y contraste === */
+
+/* Por qué DyPro */
+.why-us{
+  background:linear-gradient(125deg,#061421 0%,#081B2D 52%,#0A3158 100%)!important;
+  color:#fff!important;
+}
+.why-image{
+  background:linear-gradient(145deg,#0D5EA6 0%,#0A3158 100%)!important;
+  border:1px solid #238DD4!important;
+}
+.why-image::before{filter:none!important}
+.why-quote{
+  background:#081B2D!important;
+  border:1px solid rgba(89,199,243,.34)!important;
+  color:#fff!important;
+  box-shadow:0 16px 35px rgba(0,0,0,.20)!important;
+}
+.why-quote p{color:#fff!important}
+.why-quote em{color:#8BDBFF!important}
+.why-quote .underline{background:#59C7F3!important}
+.why-eyebrow{color:#8BDBFF!important}
+.why-eyebrow .line{background:#59C7F3!important}
+.why-us h2{color:#fff!important}
+.why-us h2 .title-accent{color:#8BDBFF!important}
+.why-icon{
+  background:#123A5A!important;
+  color:#8BDBFF!important;
+  border:1px solid rgba(139,219,255,.16)!important;
+}
+.why-item h4{color:#fff!important}
+.why-item p{color:#D7E8F4!important}
+
+/* FAQ: sustituye crema/amarillo por celeste muy claro con contraste azul marino. */
+.faq-section{
+  background:#EAF6FF!important;
+}
+.faq-section .eyebrow{color:#0D63B6!important}
+.faq-section .eyebrow .line{background:#59C7F3!important}
+.faq-section .section-title{color:#081B2D!important}
+.faq-section .title-accent{color:#238DD4!important}
+.faq-list details{
+  background:#fff!important;
+  border:1px solid #CFE2F0!important;
+  box-shadow:0 5px 16px rgba(8,27,45,.045)!important;
+}
+.faq-list summary{color:#081B2D!important}
+.faq-list summary::before{color:#1E88E5!important}
+.faq-list details[open]{border-color:#8BDBFF!important}
+.faq-list details[open] summary{color:#0D5EA6!important}
+.faq-list details p{color:#52687B!important;border-top-color:#D8E8F5!important}
+
+/* La antigua sección social ha sido eliminada del HTML. */
