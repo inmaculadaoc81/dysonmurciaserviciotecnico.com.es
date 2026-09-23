@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 620">
+<defs>
+ <linearGradient id="blue" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#8BDBFF"/><stop offset=".48" stop-color="#2B8FE8"/><stop offset="1" stop-color="#0D5EA6"/></linearGradient>
+ <linearGradient id="metal" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#DDF2FF"/><stop offset=".45" stop-color="#7EA2BB"/><stop offset=".72" stop-color="#F7FBFF"/><stop offset="1" stop-color="#29465F"/></linearGradient>
+ <filter id="shadow"><feDropShadow dx="0" dy="12" stdDeviation="10" flood-color="#081B2D" flood-opacity=".18"/></filter>
+</defs>
+<!-- isometric base -->
+<g filter="url(#shadow)">
+ <path d="M62 430 215 342l165 94-157 91z" fill="#DDF2FF"/>
+ <path d="M62 430v32l161 94v-29z" fill="#8BDBFF"/>
+ <path d="M223 527v29l157-91v-29z" fill="#59C7F3"/>
+</g>
+<!-- motor turbine, fully contained -->
+<g transform="translate(70 270)">
+ <circle cx="92" cy="92" r="78" fill="#0A3158" stroke="#238DD4" stroke-width="7"/>
+ <circle cx="92" cy="92" r="52" fill="#0D63B6"/>
+ <circle cx="92" cy="92" r="23" fill="#DDF2FF"/>
+ <g fill="#8BDBFF">
+  <path d="M92 45c19 0 31 9 37 20l-26 17z"/><path d="M139 92c0 19-9 31-20 37l-17-26z"/>
+  <path d="M92 139c-19 0-31-9-37-20l26-17z"/><path d="M45 92c0-19 9-31 20-37l17 26z"/>
+ </g>
+</g>
+<!-- screwdriver / repair tool -->
+<g transform="translate(188 80) rotate(13 80 190)">
+ <path d="M74 15h32l8 34-13 20H79L66 49z" fill="#238DD4" stroke="#0A3158" stroke-width="5"/>
+ <rect x="71" y="58" width="38" height="250" rx="18" fill="url(#metal)" stroke="#0D5EA6" stroke-width="5"/>
+ <rect x="58" y="265" width="64" height="130" rx="27" fill="url(#blue)" stroke="#0A3158" stroke-width="6"/>
+ <path d="M77 286h26" stroke="#DDF2FF" stroke-width="7" stroke-linecap="round"/>
+ <path d="M77 312h26" stroke="#DDF2FF" stroke-width="7" stroke-linecap="round"/>
+</g>
+<!-- small circuit component -->
+<g transform="translate(270 360) rotate(-9)">
+ <rect width="104" height="78" rx="12" fill="#0D63B6" stroke="#8BDBFF" stroke-width="4"/>
+ <rect x="17" y="17" width="35" height="27" rx="4" fill="#DDF2FF"/>
+ <path d="M52 30h33M25 55h60" stroke="#59C7F3" stroke-width="5"/>
+</g>
+</svg>
