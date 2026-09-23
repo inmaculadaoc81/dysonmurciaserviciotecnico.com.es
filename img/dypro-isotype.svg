@@ -1,7 +1,9 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none" role="img" aria-hidden="true">
-<circle cx="32" cy="32" r="31" fill="#472711"/>
-<path d="M32 10c9 0 15 5.5 15 12.5 0 5-3.5 8-8 8-3.5 0-6-2-6-5 0-2.2 1.6-3.8 3.6-3.8 1.5 0 2.6 1 2.6 2.4" stroke="#c26f34" stroke-width="3.4" stroke-linecap="round" fill="none"/>
-<path d="M32 10c-9 0-15 8-15 16.5 0 6.5 4.5 11 10.5 11 4.5 0 8-3 8-7.2" stroke="#3ccec2" stroke-width="3.4" stroke-linecap="round" fill="none"/>
-<path d="M17 26.5c0-3.5 1.6-6.7 4-9" stroke="#fff" stroke-opacity=".55" stroke-width="2.4" stroke-linecap="round" fill="none"/>
-<circle cx="32" cy="32" r="4.4" fill="#fff"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="t d">
+<title id="t">DyPro reparación de aspiradoras</title><desc id="d">Isotipo técnico con aspiradora, herramienta y flujo de aire.</desc>
+<rect x="2" y="2" width="60" height="60" rx="18" fill="#0B1F3A"/>
+<path d="M19 19h18c5 0 9 4 9 9v4c0 5-4 9-9 9H26" fill="none" stroke="#59C7F3" stroke-width="4" stroke-linecap="round"/>
+<circle cx="24" cy="43" r="7" fill="none" stroke="#fff" stroke-width="4"/>
+<path d="M41 18l7-7M43.5 8.5l5 5M39 22l-5 5" fill="none" stroke="#3A8DFF" stroke-width="3.5" stroke-linecap="round"/>
+<path d="M16 27c-3 2-5 5-5 8M14 22c-5 3-8 8-8 13" fill="none" stroke="#8BDBFF" stroke-width="3" stroke-linecap="round"/>
+<circle cx="43" cy="31" r="3.5" fill="#fff"/>
 </svg>
