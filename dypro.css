@@ -21,3 +21,49 @@ footer{background:#3a2110;color:#f6e4d8;padding-top:56px}footer .footer-grid{gri
 @media(max-width:700px){.trust-grid{grid-template-columns:1fr}}
 .faq-section{padding:85px 0;background:#fff6ed}.faq-list{max-width:820px;margin:28px auto 0;display:grid;gap:10px}.faq-list details{background:#fff;border:1px solid #f5e5dc;border-radius:15px;padding:18px 20px}.faq-list summary{font-weight:800;cursor:pointer;color:#241d17;list-style:none;display:flex;align-items:center;gap:10px}.faq-list summary::-webkit-details-marker{display:none}.faq-list summary:before{content:"▶";font-size:11px;color:var(--dp-royal);transition:transform .15s ease;flex:none}.faq-list details[open] summary:before{transform:rotate(90deg)}.faq-list p{margin:12px 0 0;color:#5f3419;font-size:14.5px;line-height:1.65}
 @media(max-width:640px){.faq-section{padding:55px 0}}
+
+
+/* === DyPro refresh 2026-09: identidad azul técnica === */
+:root{
+  --green:#1E88E5;--green-dark:#0D5EA6;--green-darker:#0A3158;
+  --dark:#081B2D;--dark-2:#061421;
+  --bg-light-green:#EAF6FF;--bg-light-green-2:#F5FAFE;
+  --text-dark:#0B1F33;--text-gray:#516477;--text-gray-light:#718295;
+  --border-light:#D8E8F5;--dp-blue:#0D63B6;--dp-royal:#2B8FE8;
+  --dp-magenta:#59C7F3;--dp-night:#081B2D;--dp-light:#F7FBFF;
+}
+body{color:var(--text-dark)}
+.logo-word{color:#061421}.logo-word em{color:#2B8FE8}
+.btn-primary{background:linear-gradient(135deg,#48BDEB 0%,#238DD4 55%,#0D5EA6 100%);box-shadow:0 8px 24px rgba(13,94,166,.24)}
+.btn-primary:hover{box-shadow:0 12px 30px rgba(13,94,166,.32)}
+.hero{background:linear-gradient(180deg,#ECF8FF 0%,#F7FBFF 34%,#fff 66%,#EDF7FF 100%)}
+.hero-pattern{background-image:url('img/dypro-hero-pattern.svg'),linear-gradient(rgba(30,136,229,.055) 1px,transparent 1px),linear-gradient(90deg,rgba(30,136,229,.055) 1px,transparent 1px)}
+.hero-glow{background:radial-gradient(circle,rgba(89,199,243,.26),rgba(30,136,229,.10) 48%,transparent 74%)}
+.hero-lead{color:#52687B}.hero-feature{color:#17334D}.hero-feature svg,.hero-info-item svg{color:#2B8FE8}.hero-info-item span{color:#6A7E91}
+.hero-actions .appointment-action{background:linear-gradient(135deg,#1E88E5,#0D5EA6)}
+.hero-actions .phone-action{background:linear-gradient(135deg,#59C7F3,#238DD4)}
+.eyebrow{color:#0D63B6}.eyebrow .line{background:#59C7F3}
+.trusted-label,.trusted-sub{color:#607487}.reviews-card{background:linear-gradient(115deg,#0A3158,#061421);border-color:rgba(89,199,243,.22)}
+.sol-card{border-color:#DCEBF6;background:linear-gradient(#fff,#F8FCFF)}.sol-card:hover{box-shadow:0 14px 28px rgba(23,94,148,.12);border-color:#B8DDF3}
+.sol-icon{background:#EAF6FF;color:#1E88E5}.sol-card h3{color:#12324D}.sol-card p{color:#5F7487}
+.why-us{background:linear-gradient(120deg,#0A3158,#061421 77%)}.why-image{background:linear-gradient(150deg,#0D5EA6,#071C2F);border-color:rgba(89,199,243,.25)}
+.why-item p{color:#D3E5F1}.how-num{background:linear-gradient(135deg,#238DD4,#59C7F3);box-shadow:0 8px 22px rgba(35,141,212,.26)}.how-arrow{color:#9FC8E4}.how-step p{color:#607487}
+.cita{background:#F3F9FD}.contact-info h2{color:#0B2943}.contact-phone a,.privacy-check a,.cita-fallback{color:#0D63B6}
+#contact-form input:not([type=checkbox]),#contact-form textarea{background:#F8FCFF;border-color:#DCEBF6;color:#12324D}
+#contact-form input:focus,#contact-form textarea:focus{border-color:#2B8FE8;box-shadow:0 0 0 3px rgba(43,143,232,.14)}
+.social-section{background:#EAF6FF}.social-section h2{color:#081B2D}.social-link{background:#0D63B6!important}.social-link.instagram,.social-link.snapchat{background:#238DD4!important}.social-link.tiktok,.social-link.x-twitter{background:#081B2D!important}.social-link.youtube{background:#1E88E5!important}
+.seo-text{background:linear-gradient(140deg,#F1F9FF,#fff 56%,#EAF6FF)}.seo-kicker{color:#0D63B6}.seo-text h2{color:#081B2D}.seo-text .seo-description p{color:#52687B}.seo-text .seo-description p:first-child{color:#29465F}
+footer{background:#061421;color:#D7E8F4}.footer-brand-note,.footer-col ul li a,.footer-contact li,footer .footer-contact a{color:#C3D8E7}.cookie-banner{background:#081B2D}.cookie-btn{background:#1E88E5}
+
+/* Franja legal independiente: centrada, clara y visible */
+.disclaimer-bar{
+  background:linear-gradient(90deg,#0D5EA6,#1E88E5,#0D5EA6);
+  color:#fff;text-align:center;font-size:13px;font-weight:700;letter-spacing:.01em;
+  padding:9px 18px;line-height:1.35;border:0;box-shadow:0 3px 12px rgba(6,20,33,.12)
+}
+.disclaimer-bar::before{content:"ℹ";display:inline-block;margin-right:8px;font-size:14px}
+
+/* El verde queda reservado a WhatsApp */
+.hero-actions .whatsapp-action,.floating-cta{background:linear-gradient(145deg,#35D36F,#20B45C 58%,#168A45 100%)!important}
+.hero-actions .whatsapp-action:hover,.floating-cta:hover{background:#168A45!important}
+@media(max-width:640px){.disclaimer-bar{font-size:11.5px;padding:8px 12px}}
