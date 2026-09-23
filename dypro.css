@@ -229,9 +229,11 @@ footer{background:#061421!important}
 }
 @media(max-width:560px){
   .hero-benefits{padding:18px 0 26px}
-  .hero-benefits-grid{grid-template-columns:1fr}
-  .hero-benefit{min-height:124px;padding:22px 18px}
+  .hero-benefits-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .hero-benefit{min-height:138px;padding:20px 12px}
   .hero-benefit::after{display:none!important}
-  .hero-benefit:not(:last-child){border-bottom:1px solid #C9E2F3}
-  .hero-benefit-icon{width:52px;height:52px;margin-bottom:12px}
+  .hero-benefit:nth-child(-n+2){border-bottom:1px solid #C9E2F3}
+  .hero-benefit:nth-child(odd){border-right:1px solid #C9E2F3}
+  .hero-benefit-icon{width:50px;height:50px;margin-bottom:11px}
+  .hero-benefit h2{font-size:14px;line-height:1.3}
 }
