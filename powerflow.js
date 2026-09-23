@@ -1,0 +1,16 @@
+/* PowerFlow: interacciones de navegación, contacto y preferencias de cookies. */
+(function(){'use strict';
+var menu=document.getElementById('powerflow-mobile-menu');
+var toggle=document.querySelector('.menu-toggle');
+function closeMenu(){if(!menu||!toggle)return;menu.classList.remove('is-open');toggle.setAttribute('aria-expanded','false');toggle.setAttribute('aria-label','Abrir menú');}
+if(menu&&toggle){toggle.addEventListener('click',function(){var open=menu.classList.toggle('is-open');toggle.setAttribute('aria-expanded',String(open));toggle.setAttribute('aria-label',open?'Cerrar menú':'Abrir menú');});menu.addEventListener('click',function(e){if(e.target.closest('a'))closeMenu();});document.addEventListener('keydown',function(e){if(e.key==='Escape'&&menu.classList.contains('is-open')){closeMenu();toggle.focus();}});window.addEventListener('resize',function(){if(window.innerWidth>980)closeMenu();});}
+var header=document.querySelector('header');if(header){function onScroll(){header.classList.toggle('scrolled',window.scrollY>8);}onScroll();window.addEventListener('scroll',onScroll,{passive:true});}
+var form=document.getElementById('contact-form'),status=document.getElementById('status');if(form&&status){form.addEventListener('submit',async function(e){e.preventDefault();if(!form.reportValidity())return;var btn=form.querySelector('button[type=submit]');if(btn)btn.disabled=true;status.textContent='Enviando consulta…';status.style.color='';try{var data=Object.fromEntries(new FormData(form).entries());var res=await fetch('/api/contacto',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(data)});if(!res.ok)throw Error('HTTP '+res.status);status.textContent='Consulta enviada. Gracias, nos pondremos en contacto contigo.';status.style.color='#244d9c';form.reset();}catch(err){status.textContent='No se pudo enviar la consulta. Llámanos o escríbenos por WhatsApp.';status.style.color='#ae2674';}finally{if(btn)btn.disabled=false;}});}
+var banner=document.getElementById('cookie-banner');if(banner){var key='powerflow_cookie_preference',saved=null;try{saved=localStorage.getItem(key);}catch(e){}banner.hidden=!!saved;function choose(value){try{localStorage.setItem(key,value);}catch(e){}banner.hidden=true;}var accept=document.getElementById('cookie-accept'),reject=document.getElementById('cookie-reject'),close=document.getElementById('cookie-close');if(accept)accept.addEventListener('click',function(){choose('accepted');});if(reject)reject.addEventListener('click',function(){choose('rejected');});if(close)close.addEventListener('click',function(){choose('dismissed');});}
+})();
+/* Activar identidad, clientes, iconografía, redes y chatbot real conectado a n8n. */
+(function(){'use strict';
+['powerflow-header-hero.css','powerflow-clients.css','powerflow-restoration.css','powerflow-social-colors.css','powerflow-n8n-chat.css'].forEach(function(file){var css=document.createElement('link');css.rel='stylesheet';css.href=file;document.head.appendChild(css);});
+var restoration=document.createElement('script');restoration.src='powerflow-restoration.js';restoration.defer=true;document.head.appendChild(restoration);
+var chat=document.createElement('script');chat.src='powerflow-n8n-chat.js';chat.type='module';document.head.appendChild(chat);
+})();
