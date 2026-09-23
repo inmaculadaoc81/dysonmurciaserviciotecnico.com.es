@@ -247,3 +247,12 @@ footer{background:#061421!important}
 @media(max-width:1180px){.hero-vacuum-art{width:220px;opacity:.22}.hero-vacuum-left{left:-85px}.hero-vacuum-right{right:-85px}}
 @media(max-width:720px){.hero-vacuum-art{width:165px;top:46%;opacity:.12}.hero-vacuum-left{left:-95px}.hero-vacuum-right{right:-95px}}
 @media(prefers-reduced-motion:reduce){.hero-vacuum-art{animation:none}}
+
+/* Hero repair artwork: contenido dentro de límites, sin recortes */
+.hero-vacuum-art{top:50%!important;width:clamp(190px,22vw,330px)!important;max-height:82%!important;object-fit:contain!important;opacity:.92!important}
+.hero-vacuum-left{left:clamp(8px,2vw,34px)!important}
+.hero-vacuum-right{right:clamp(8px,2vw,34px)!important}
+.hero-inner{position:relative;z-index:4}
+.hero .hero-lead{display:none!important}
+@media(max-width:1180px){.hero-vacuum-art{width:190px!important;opacity:.18!important}.hero-vacuum-left{left:4px!important}.hero-vacuum-right{right:4px!important}}
+@media(max-width:720px){.hero-vacuum-art{width:125px!important;max-height:55%!important;opacity:.09!important}.hero-vacuum-left{left:0!important}.hero-vacuum-right{right:0!important}}
