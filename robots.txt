@@ -1,3 +1,3 @@
 User-agent: *
 Allow: /
-Sitemap: https://desarrolladorpowerautomate.com/sitemap.xml
+Sitemap: https://murciaserviciotecnico.com.es/sitemap.xml

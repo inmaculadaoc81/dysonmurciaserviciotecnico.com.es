@@ -1,4 +1,4 @@
-/* PowerFlow: ilustración lineal visible, texto claramente separado de los trazos. */
+/* DyPro: ilustración lineal visible, texto claramente separado de los trazos. */
 .why-us .why-image{
   position:relative;
   isolation:isolate;
@@ -27,23 +27,23 @@
   max-width:calc(100% - 12px);
   padding:18px 22px;
   border-radius:13px;
-  background:#101b36;
-  box-shadow:0 7px 22px rgba(4,10,27,.18);
+  background:#362010;
+  box-shadow:0 7px 22px rgba(27,14,4,.18);
 }
 .why-us .why-image .why-quote p,
 .why-us .why-image .why-quote p em{
   color:#fff;
   text-shadow:none;
 }
-.why-us .why-image .why-quote p em{color:#f5b5e1;}
+.why-us .why-image .why-quote p em{color:#b5f5e9;}
 .solutions-grid .sol-card .sol-icon svg.ic{
   display:block;width:29px;height:29px;flex-shrink:0;
-  color:var(--pf-royal,#345fc2);stroke:currentColor;fill:none;
+  color:var(--dp-royal,#c26f34);stroke:currentColor;fill:none;
   stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;
 }
 .why-list .why-item .why-icon svg.ic{
   display:block;width:22px;height:22px;flex-shrink:0;
-  color:#f0b5df;stroke:currentColor;fill:none;
+  color:#b5f0e3;stroke:currentColor;fill:none;
   stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;
 }
 @media(max-width:640px){

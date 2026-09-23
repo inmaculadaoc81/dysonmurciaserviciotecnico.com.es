@@ -1,11 +1,11 @@
-/* Chat n8n de PowerFlow: mantener el botón original y la ventana conversacional real. */
+/* Chat n8n de DyPro: mantener el botón original y la ventana conversacional real. */
 :root {
-  --chat--toggle--background: #004aad;
-  --chat--toggle--hover--background: #003c8f;
-  --chat--toggle--active--background: #003c8f;
+  --chat--toggle--background: #ad3200;
+  --chat--toggle--hover--background: #8f2a00;
+  --chat--toggle--active--background: #8f2a00;
   --chat--toggle--color: #fff;
   --chat--toggle--size: 56px;
-  --chat--header--background: #244897;
+  --chat--header--background: #975224;
   --chat--header--color: #fff;
 }
 #n8n-chat .chat-message-markdown strong,
@@ -32,17 +32,17 @@
   flex-shrink: 0 !important;
   border: 1px solid #fff !important;
   border-radius: 50% !important;
-  background: #004aad !important;
+  background: #ad3200 !important;
   color: #fff !important;
-  box-shadow: 0 4px 20px rgba(0,74,173,.4) !important;
+  box-shadow: 0 4px 20px rgba(173,50,0,.4) !important;
   z-index: 10060 !important;
   transition: transform .2s ease, box-shadow .2s ease !important;
 }
 #n8n-chat .chat-window-toggle:hover,
 #n8n-chat [class*="chat-window-toggle"]:hover {
   transform: scale(1.07) !important;
-  background: #003c8f !important;
-  box-shadow: 0 8px 25px rgba(0,74,173,.5) !important;
+  background: #8f2a00 !important;
+  box-shadow: 0 8px 25px rgba(173,50,0,.5) !important;
 }
 #n8n-chat .chat-window {
   position: relative !important;

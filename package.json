@@ -1,1 +1,1 @@
-{"name":"powerflow-automatizacion-power-automate","version":"1.0.0","private":true,"engines":{"node":"22.x"},"dependencies":{"nodemailer":"^6.9.16"}}
+{"name":"dypro-servicio-tecnico-dyson-murcia","version":"1.0.0","private":true,"engines":{"node":"22.x"},"dependencies":{"nodemailer":"^6.9.16"}}

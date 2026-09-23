@@ -6,8 +6,8 @@ const INACTIVITY_MS = 5 * 60 * 1000;
 const webhookUrl = 'https://sswebhookss.affirmatechnology.com/webhook/be1293ae-db62-4ab3-8204-d2ae42505d63/chat';
 const target = document.querySelector('#n8n-chat');
 
-if (target && !target.dataset.powerflowChatInitialized) {
-  target.dataset.powerflowChatInitialized = 'true';
+if (target && !target.dataset.dyproChatInitialized) {
+  target.dataset.dyproChatInitialized = 'true';
   createChat({
     webhookUrl,
     webhookConfig: { method: 'POST', headers: {} },
@@ -19,11 +19,11 @@ if (target && !target.dataset.powerflowChatInitialized) {
     showWelcomeScreen: true,
     defaultLanguage: 'es',
     initialMessages: [
-      'Buenas tardes 👋 Soy Fátima, tu asistente de PowerFlow. ¿Qué proceso te gustaría automatizar con Power Automate?'
+      'Buenas tardes 👋 Soy Fátima, tu asistente de DyPro. ¿Qué avería tiene tu aspiradora Dyson?'
     ],
     i18n: {
       es: {
-        title: 'PowerFlow',
+        title: 'DyPro',
         subtitle: '🟢 Asistente Virtual',
         footer: '',
         getStarted: 'INICIAR CONVERSACIÓN',

@@ -1,82 +1,103 @@
-POWERFLOW | SERVICIO DE AUTOMATIZACIÓN POWER AUTOMATE
-====================================================
+DYPRO — SERVICIO TÉCNICO DE ASPIRADORAS DYSON EN MURCIA
+========================================================
 
-Sitio web: https://desarrolladorpowerautomate.com/
-Repositorio: https://github.com/inmaculadaoc81/PowerFlow
-Marca: PowerFlow, parte del Grupo N8nLabs.
+Repositorio clonado originalmente de PowerFlow (Grupo N8nLabs, automatización
+Power Automate). Se ha reconvertido por completo a DyPro, servicio técnico de
+reparación de aspiradoras Dyson en Murcia. Ningún texto de negocio ni enlace
+del repositorio original se ha mantenido salvo la infraestructura compartida
+de la familia (política de privacidad, patrón de checklist, chat n8n).
 
-DISEÑO
-- index.html contiene los textos y secciones redactados para Power Automate.
-- style.css conserva la estructura de la plantilla original; powerflow.css aplica la identidad visual nueva (azul y magenta) y un hero diferenciado.
-- img/logo-1ok-PowerFlow-Automatizacion-Power-Automate.webp es el logotipo; img/icono.jpg se utiliza como favicon.
-- img/hero1-powerflow-automatizacion-hero-50.webp e img/hero2-powerflow-automatizacion-hero2-50.webp son las imágenes laterales del hero.
-- img/powerflow-hero-pattern.svg añade líneas, nodos y círculos decorativos.
-- El botón de WhatsApp mantiene el verde habitual.
-- powerflow.js gestiona el menú móvil, el envío del formulario y el banner de preferencias.
+Dominio: https://murciaserviciotecnico.com.es/
+Marca: DyPro Servicio Técnico de Aspiradoras Dyson en Murcia
+Ficha de Google: https://maps.app.goo.gl/RQvnjviqLXcNkzia7
 
 DATOS DE CONTACTO
-- Teléfono: +34 910 05 40 12.
-- WhatsApp: +34 638 61 95 88.
-- Dirección: C. Joaquín María López, 26, Madrid.
-- Horario: lunes a viernes, 09:30–18:00.
-- Reserva de reuniones: https://cal.com/n8n-automatizaciones/30min.
-- Google Maps: https://maps.app.goo.gl/SYNnhm98rdRtmCYv6.
+- WhatsApp: +34 649 97 01 28.
+- Teléfono: +34 910 05 48 17 (el mismo número usado en otros repos de
+  reparación Dyson de la familia, ej. DysonValladolid — confirmado que es
+  correcto, no un error de copia).
+- Recogida a domicilio: https://sis.redsys.es/tiendaWeb/item/NDk4OzI= (botón
+  "Solicita tu recogida ahora" en el hero, dado explícitamente por el
+  cliente).
+- Reserva de citas: https://cal.com/kelatos/30min (patrón de la familia de
+  reparaciones, no el cal.com de N8nLabs que usaba el repo original).
 - Política de privacidad: https://kelatos.com/privacy-policy/.
 
-FORMULARIO / VERCEL
-El formulario envía POST a /api/contacto y requiere en Vercel las variables
-SMTP_HOST, SMTP_PORT, SMTP_SECURE, SMTP_USER y SMTP_PASS. CONTACT_EMAIL es
-opcional; si no se indica, se usa SMTP_USER como destinatario. No subir
-contraseñas ni secretos al repositorio. Comprobar una entrega real después del
-despliegue.
+DIRECCIÓN — PENDIENTE DE CONFIRMAR: no se ha mostrado una dirección postal
+exacta (calle y número) porque no se facilitó y no se ha podido obtener de
+forma fiable desde el enlace corto de Google Maps (pantalla de consentimiento
+bloquea el scraping). Por geocodificación inversa de las coordenadas del
+enlace, el negocio está en la zona de Calle del Emigrante / San Antón,
+Murcia (CP 30009), pero NO se ha inventado un número de portal. El
+hero/footer/schema.org usan "Murcia y área metropolitana" en su lugar. Si el
+cliente da la dirección exacta, añadirla al hero-info, footer y JSON-LD.
 
-CHATBOT
-La integración de n8n usa el webhook compartido del Grupo N8nLabs
-(powerflow-n8n-chat.js), el mismo que usan FlujoPro y DataLabs — confirmado
-intencional por el cliente. (Esta nota sustituye una advertencia anterior sobre
-un marcador PENDIENTE_URL_WEBHOOK_N8N_POWERFLOW que ya no existe en el código;
-el README no se había actualizado tras el cambio.)
+RENOMBRADO DE ARCHIVOS (limpieza de contaminación "powerflow"):
+powerflow.css→dypro.css, powerflow.js→dypro.js, powerflow-clients.css→
+dypro-clients.css, powerflow-header-hero.css→dypro-header-hero.css,
+powerflow-n8n-chat.css/.js→dypro-n8n-chat.css/.js, powerflow-restoration.css/
+.js→dypro-restoration.css/.js, powerflow-social-colors.css→
+dypro-social-colors.css, img/powerflow-hero-pattern.svg→
+img/dypro-hero-pattern.svg. Referencias actualizadas en index.html y en la
+carga dinámica de dypro.js. Variables CSS --pf-*→--dp-*.
 
-CALENDARIO
-Es HTML estático, no WordPress: el shortcode [cal_custom] no se ejecuta aquí.
-Se usa el iframe de la misma agenda con vista mensual y tema claro.
+COLOR — cobre y grafito (nueva paleta, distinta de toda la familia):
+Se ha sustituido la identidad azul/magenta de PowerFlow por una paleta cobre
+(--green:#ad592a y derivados) + grafito oscuro + acento verde azulado
+(--dp-magenta:#3ccec2), aplicada mediante rotación de tono (HSL) sobre TODOS
+los colores de marca (hex y rgba) de dypro.css, dypro-header-hero.css,
+dypro-restoration.css, dypro-n8n-chat.css y el patrón SVG del hero —
+preservando saturación y luminosidad exactas, así que todos los contrastes,
+degradados y estados hover quedan intactos, solo cambia el matiz. El verde de
+WhatsApp y los colores reales de cada red social (Facebook, YouTube, etc. en
+dypro-social-colors.css) se han dejado sin tocar a propósito.
 
-SEO
-El título, la descripción, la URL canónica, Open Graph, datos estructurados,
-robots.txt y sitemap.xml utilizan el dominio de PowerFlow.
+LOGOTIPO: se ha sustituido el logo de imagen (webp heredado de PowerFlow) por
+un isotipo SVG propio (img/dypro-isotype.svg, y su versión inline en
+cabecera/footer): un motivo de ciclón/espiral (alusión a la tecnología
+ciclónica de Dyson) en cobre y verde azulado sobre grafito, junto al
+logotipo "DyPro" en texto. Pensado para poder reutilizar la misma forma con
+otro color en futuras marcas de la familia.
 
-────────────────────────────────────────────────────────────
-REVISIÓN COMPLETA (a petición del cliente: "revisa este repositorio",
-mismo alcance que en FlujoPro y DataLabs)
-────────────────────────────────────────────────────────────
+CONTENIDO: reescrito por completo (hero, servicios, por qué elegirnos, cómo
+funciona, texto SEO, footer, schema.org) para reparación de aspiradoras
+Dyson, no automatización de procesos. El formulario de contacto cambia el
+campo "empresa" (sin sentido para un cliente particular) por "modelo"
+(modelo de la aspiradora, opcional) — actualizado también en
+api/contacto.js.
 
-BUG REAL — el enlace "Nosotros" del menú principal apuntaba a
-"#nosotros", pero la sección real tiene id="sobre-powerflow" (el
-footer ya usaba el enlace correcto, "#sobre-powerflow", para el mismo
-destino). El del menú principal no llevaba a ningún sitio. Corregido.
+SECCIONES AÑADIDAS (a petición del cliente, con capturas de referencia de un
+sitio hermano de la familia — adaptadas al contexto de DyPro, sin copiar
+literalmente donde no aplicaba):
+- "Reparación en 2 horas" (#rapidez), justo después del hero.
+- "Confianza" (#confianza), sustituye la antigua tarjeta única de Google por
+  dos tarjetas (Google Business + YouTube), con el estilo cobre/grafito.
+- Preguntas frecuentes (#faq), antes de la sección SEO final. Se ha ajustado
+  la pregunta "¿Qué productos Dyson reparáis?" a "¿Qué aspiradoras Dyson
+  reparáis?", porque DyPro es específicamente servicio técnico de
+  aspiradoras (no seca­dores Supersonic/Airwrap como el sitio de referencia).
 
-BUG REAL — package.json tenía el nombre de otro repositorio
-("smartsheets-automatizaciones-excel"). Corregido a
-"powerflow-automatizacion-power-automate". El resto del backend
-(api/contacto.js) ya estaba bien escrito específicamente para
-PowerFlow.
+ELIMINADO A PETICIÓN DEL CLIENTE: las dos imágenes decorativas del hero
+(hero1/hero2, .hero-side-img) y sus reglas CSS asociadas en dypro.css y
+dypro-header-hero.css (huérfanas tras quitar las imágenes). Borrados también
+los archivos de imagen ya sin ninguna referencia: hero1/hero2-powerflow-*.webp,
+logo-1ok-PowerFlow-*.webp (logo antiguo, sustituido por el SVG) e icono.jpg
+(favicon antiguo, sustituido por dypro-isotype.svg). NO se ha tocado
+img/icono-automatizacion-tuerca-foco.svg (decoración de fondo de la sección
+"por qué elegirnos"): sigue enlazada desde dypro-restoration.css, no estaba
+huérfana — se borró por error en un primer barrido y se restauró.
 
-BUG REAL — 6 archivos JS/CSS existían en el repositorio pero no
-estaban enlazados ni cargados por ningún otro archivo (mismo patrón
-que en FlujoPro): powerflow-activate.js, powerflow-chat.js,
-editorial-enhancements.js, site-enhancements.js, hero-buttons.css,
-typography-layout.css. Todo lo que aportaban ya estaba cubierto por
-los archivos realmente activos (los botones "Agendar cita"/"Atención
-telefónica" ya tienen su propio degradado en powerflow.css, la
-tarjeta "Sobre PowerFlow" ya tiene su estilo en powerflow.css +
-powerflow-restoration.css). Eliminados.
+CHATBOT: dypro-n8n-chat.js usa el webhook real compartido del grupo
+(sswebhookss.affirmatechnology.com), el mismo que el resto de la familia.
+Se ha eliminado el script de chat inline y roto que tenía el index.html
+original (placeholder 'PENDIENTE_URL_WEBHOOK_N8N_POWERFLOW' nunca
+configurado); el chat real ya lo carga dypro.js de forma dinámica, como en
+el resto de repos de la familia.
 
-Corregido también un comentario obsoleto en cal-booking.css que
-seguía mencionando "SmartSheets".
-
-VERIFICADO (todo correcto, sin más cambios necesarios): title/meta/
-canonical/og, JSON-LD, teléfono y WhatsApp (consistentes en todas sus
-apariciones), enlace de Google Maps y el iframe embebido (usa el
-place_id correcto de PowerFlow, no el de otro repositorio),
-robots.txt/sitemap.xml, resto de anclas internas, formulario (los
-campos coinciden exactamente con lo que espera api/contacto.js).
+PENDIENTE DE VALORAR POR EL CLIENTE:
+- Confirmar la dirección postal exacta (ver arriba).
+- La franja "trusted"/clientes (dypro-clients.js, vía dypro-clients.css) usa
+  el mismo listado de marcas del Grupo Kelatos que otros repos (Kelatos,
+  GameFix, Start Monitor, Surface Labs, DellTech, Video Convert, Alquiler
+  Ordenadores Madrid). Se ha mantenido igual que en PowerFlow por ser
+  infraestructura compartida de familia, no específica de automatización.

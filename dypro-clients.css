@@ -1,4 +1,4 @@
-/* PowerFlow: restauración de la franja de clientes y espaciado del hero sin texto secundario. */
+/* DyPro: restauración de la franja de clientes y espaciado del hero sin texto secundario. */
 .hero h1{margin-bottom:35px;}
 .hero .hero-lead{display:none;}
 .hero .hero-features{margin-top:0;}
