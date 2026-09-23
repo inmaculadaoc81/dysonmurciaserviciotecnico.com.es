@@ -237,3 +237,13 @@ footer{background:#061421!important}
   .hero-benefit-icon{width:50px;height:50px;margin-bottom:11px}
   .hero-benefit h2{font-size:14px;line-height:1.3}
 }
+
+/* Ilustraciones laterales SVG del hero */
+.hero{position:relative;overflow:hidden}.hero .container{position:relative;z-index:3}
+.hero-vacuum-art{position:absolute;z-index:1;top:50%;width:clamp(210px,23vw,360px);height:auto;pointer-events:none;user-select:none;opacity:.88;filter:drop-shadow(0 22px 30px rgba(8,27,45,.16));animation:dyproHeroFloat 5.5s ease-in-out infinite}
+.hero-vacuum-left{left:max(-95px,calc(50% - 850px));transform:translateY(-50%) rotate(-2deg)}
+.hero-vacuum-right{right:max(-95px,calc(50% - 850px));transform:translateY(-50%) rotate(2deg);animation-delay:-2.4s}
+@keyframes dyproHeroFloat{0%,100%{margin-top:0}50%{margin-top:-13px}}
+@media(max-width:1180px){.hero-vacuum-art{width:220px;opacity:.22}.hero-vacuum-left{left:-85px}.hero-vacuum-right{right:-85px}}
+@media(max-width:720px){.hero-vacuum-art{width:165px;top:46%;opacity:.12}.hero-vacuum-left{left:-95px}.hero-vacuum-right{right:-95px}}
+@media(prefers-reduced-motion:reduce){.hero-vacuum-art{animation:none}}
