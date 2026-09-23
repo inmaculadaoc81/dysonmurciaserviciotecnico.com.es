@@ -274,3 +274,33 @@ footer{background:#061421!important}
  .why-repair-art{opacity:.72}
  .why-quote{left:18px!important;right:18px!important;bottom:18px!important;max-width:none}
 }
+
+
+/* Centrado real de las 4 tarjetas de equipos */
+.solutions .solutions-grid{
+  display:grid!important;
+  grid-template-columns:repeat(4,minmax(0,1fr))!important;
+  gap:20px!important;
+  width:100%!important;
+  max-width:1100px!important;
+  margin:42px auto 0!important;
+  padding:0!important;
+  justify-content:center!important;
+  align-items:stretch!important;
+}
+.solutions .sol-card{
+  width:100%!important;
+  margin:0!important;
+  box-sizing:border-box!important;
+  display:flex!important;
+  flex-direction:column!important;
+  align-items:center!important;
+  text-align:center!important;
+}
+@media(max-width:900px){
+  .solutions .solutions-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important;max-width:720px!important}
+}
+@media(max-width:560px){
+  .solutions .solutions-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:10px!important;margin-top:28px!important}
+  .solutions .sol-card{padding:22px 10px!important}
+}
