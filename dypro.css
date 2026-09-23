@@ -67,3 +67,48 @@ footer{background:#061421;color:#D7E8F4}.footer-brand-note,.footer-col ul li a,.
 .hero-actions .whatsapp-action,.floating-cta{background:linear-gradient(145deg,#35D36F,#20B45C 58%,#168A45 100%)!important}
 .hero-actions .whatsapp-action:hover,.floating-cta:hover{background:#168A45!important}
 @media(max-width:640px){.disclaimer-bar{font-size:11.5px;padding:8px 12px}}
+
+
+/* === Corrección visual 2026-09-23: cero marrón === */
+.fast-section{padding:82px 0;background:#fff}
+.fast-grid{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:clamp(42px,7vw,90px);align-items:start;max-width:1050px;margin:0 auto}
+.fast-heading{padding-top:2px;text-align:left}
+.fast-heading .eyebrow{justify-content:flex-start;text-align:left}
+.fast-heading .section-title{margin:16px 0 0;text-align:left;max-width:470px;font-size:clamp(32px,3.5vw,48px);line-height:1.12;color:#081B2D}
+.fast-heading .title-accent{color:#2B8FE8}
+.fast-details{border-left:1px solid #D8E8F5;padding-left:clamp(28px,4vw,50px)}
+.fast-details .section-sub{text-align:left;margin:0;color:#52687B;line-height:1.75}
+.fast-details .ticks{margin-top:26px}
+.tick i{background:#EAF6FF!important;color:#0D63B6!important}
+.tick b{color:#081B2D!important}.tick div{color:#52687B!important}
+
+/* Confianza: Google azul, YouTube conserva su rojo corporativo. */
+.reviews{background:#fff}
+.trust-card.google{background:linear-gradient(135deg,#0D63B6,#238DD4)!important}
+.trust-card.youtube{background:linear-gradient(135deg,#B91C12,#E5251B)!important}
+.trust-card.google,.trust-card.youtube{color:#fff!important}
+.trust-card h3,.trust-card p,.trust-card b,.trust-card .eyebrow{color:#fff!important}
+
+/* Sustituye cualquier resto visual de la antigua identidad marrón. */
+.fast-art{display:none!important}
+.reviews-card{background:linear-gradient(115deg,#0A3158,#061421)!important}
+.why-us{background:linear-gradient(120deg,#0A3158,#061421 77%)!important}
+.why-image{background:linear-gradient(150deg,#0D5EA6,#071C2F)!important}
+footer{background:#061421!important}
+.cookie-banner{background:#081B2D!important}
+.social-link.facebook{background:#0D63B6!important}
+.social-link.instagram,.social-link.snapchat{background:#238DD4!important}
+.social-link.tiktok,.social-link.x-twitter{background:#081B2D!important}
+.social-link.youtube{background:#E5251B!important}
+.hero-actions .appointment-action{background:linear-gradient(135deg,#1E88E5,#0D5EA6)!important}
+.hero-actions .phone-action{background:linear-gradient(135deg,#59C7F3,#238DD4)!important}
+
+@media(max-width:900px){
+  .fast-grid{grid-template-columns:1fr;gap:28px}
+  .fast-heading .section-title{max-width:680px}
+  .fast-details{border-left:0;border-top:1px solid #D8E8F5;padding:28px 0 0}
+}
+@media(max-width:640px){
+  .fast-section{padding:58px 0}
+  .fast-heading .section-title{font-size:clamp(30px,9vw,40px)}
+}
