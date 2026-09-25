@@ -25,7 +25,7 @@ module.exports = async (req, res) => {
       from: `"DyPro" <${process.env.SMTP_USER}>`,
       to: process.env.CONTACT_EMAIL || process.env.SMTP_USER,
       replyTo: email,
-      subject: 'Nueva consulta - DyPro Servicio Técnico de Aspiradoras Dyson',
+      subject: 'Nueva consulta - DyPro Servicio Técnico Dyson Murcia',
       text: `Nombre: ${nombre}\nModelo: ${modelo || '-'}\nEmail: ${email}\nTeléfono: ${telefono}\n\n${mensaje}`
     });
     return res.status(200).json({ok:true});

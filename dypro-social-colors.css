@@ -1,9 +1,0 @@
-/* Conserva los colores de marca de cada plataforma, por encima de las reglas corporativas de DyPro. */
-.social-section .social-link.facebook{background:#1877f2!important;}
-.social-section .social-link.instagram{background:#b00063!important;}
-.social-section .social-link.youtube{background:#b8200e!important;}
-.social-section .social-link.tiktok{background:#101010!important;}
-.social-section .social-link.x-twitter{background:#101010!important;}
-.social-section .social-link.snapchat{background:#ffad1d!important;}
-.social-section .social-link img{filter:brightness(0) invert(1);}
-.social-section .social-link.snapchat img{filter:brightness(0);}

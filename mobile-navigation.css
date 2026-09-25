@@ -19,7 +19,7 @@ nav.main-nav > a[href="#beneficios"]{display:none;}
 @media (min-width:981px){nav.main-nav .mobile-nav-cta{display:none;}}
 @media (max-width:420px){.nav-wrap{padding:12px 16px;}.logo-img{max-width:175px;height:auto;max-height:36px;}}
 
-/* Ajustes del hero en móvil: título un 30% mayor (30px -> 39px), sin desplazamiento horizontal. */
+/* Ajustes del hero en móvil sin desplazamiento horizontal (H1 móvil unificado en el CSS de la marca). */
 @media (max-width:640px){
   .hero{background:linear-gradient(180deg,#e9fbf1 0%,#fafffc 21%,#fff 40%,#fff 66%,#f5fdf8 84%,#dff7eb 100%);}
   .hero-glow{width:70vw;height:165px;max-width:70vw;filter:blur(34px);opacity:.48;animation:none;}
@@ -27,7 +27,7 @@ nav.main-nav > a[href="#beneficios"]{display:none;}
   .hero-glow.right{top:auto;bottom:-85px;right:-24%;}
   .hero .container{max-width:100%;min-width:0;padding-left:20px;padding-right:20px;}
   .hero-inner{width:100%;max-width:100%;min-width:0;}
-  .hero h1{font-size:39px;line-height:1.12;letter-spacing:-1.15px;overflow-wrap:normal;}
+  .hero h1{line-height:1.08;overflow-wrap:normal;}
   .hero-actions{width:100%;max-width:100%;min-width:0;grid-template-columns:minmax(0,1fr);}
   .hero-actions .hero-action{box-sizing:border-box;width:100%;min-width:0;max-width:100%;height:auto;min-height:52px;padding:12px 14px;white-space:normal;overflow-wrap:anywhere;word-break:normal;line-height:1.35;gap:8px;}
   .hero-actions .hero-action svg{flex:0 0 1em;}
@@ -36,4 +36,4 @@ nav.main-nav > a[href="#beneficios"]{display:none;}
   .hero-info-item > div{min-width:0;overflow-wrap:anywhere;}
   .hero-features{max-width:100%;gap:12px 18px;}
 }
-@media (max-width:360px){.hero .container{padding-left:16px;padding-right:16px;}.hero h1{font-size:39px;letter-spacing:-1.4px;}.hero-actions .hero-action{font-size:13px;padding:12px 10px;}}
+@media (max-width:360px){.hero .container{padding-left:16px;padding-right:16px;}.hero-actions .hero-action{font-size:13px;padding:12px 10px;}}
