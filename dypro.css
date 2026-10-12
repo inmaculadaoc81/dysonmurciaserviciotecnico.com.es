@@ -321,3 +321,6 @@ footer{background:#061421!important}
 @media(max-width:720px){
  .hero-vacuum-left{width:115px!important;left:2px!important;opacity:.08!important}
 }
+
+.quote-action{background:#17a398!important;background-image:none!important;border-color:#17a398!important;color:#fff!important}
+.quote-action:hover{background:#128075!important}
